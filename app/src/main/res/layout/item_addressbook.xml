@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/se_LastName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LastName" />
+    <TextView
+        android:id="@+id/semi"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="," />
+    <TextView
+        android:id="@+id/se_FirstName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FirstName" />
+
+</LinearLayout>

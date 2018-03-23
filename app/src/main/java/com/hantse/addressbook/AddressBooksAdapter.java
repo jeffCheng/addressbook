@@ -22,6 +22,7 @@ public class AddressBooksAdapter  extends ArrayAdapter<AddressBook> {
     private int resource;
     private ArrayList<AddressBook> addressBook;
 
+    // initialize ArrayAdapter
     public AddressBooksAdapter(Context context, int resource, ArrayList<AddressBook> addressBooks) {
         super(context, 0, addressBooks);
         this.resource = resource;

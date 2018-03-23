@@ -32,18 +32,19 @@ public class MainActivity extends AppCompatActivity {
 //        addressBooks.add(addressBook1);
 //        addressBooks.add(addressBook2);
 
-        //Listview and Adapter
+        //ListView to create each item and Adapter to decorate the item
         item_list= (ListView) findViewById(R.id.listview);
         addressBooksAdapter = new AddressBooksAdapter(this, R.layout.item_addressbook, addressBooks);
         item_list.setAdapter(addressBooksAdapter);
-
 
         //OnItemClickListener
         item_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i=new Intent(MainActivity.this,AddressBookDetailActivity.class);
+                // Use Intent to develier the object
                 i.putExtra("addressBook",addressBooksAdapter.getItem(position));
+                //start another activity
                 startActivity(i);
             }
         });

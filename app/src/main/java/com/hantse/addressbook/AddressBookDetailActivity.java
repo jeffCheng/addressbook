@@ -29,7 +29,9 @@ public class AddressBookDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
         addressBook = getIntent().getExtras().getParcelable("addressBook");
+
         firstName =(TextView) findViewById(R.id.detail_firstName);
         lastName =(TextView) findViewById(R.id.detail_lastName);
         addressOne  =(TextView) findViewById(R.id.detail_addressOne);
@@ -52,6 +54,7 @@ public class AddressBookDetailActivity extends AppCompatActivity {
         phoneNumber.setText(addressBook.getPhoneNumber());
         email.setText(addressBook.getEmail());
 
+        //modify the data
         Button button= (Button) findViewById(R.id.modify_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

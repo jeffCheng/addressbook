@@ -33,7 +33,9 @@ public class UpdateAddressBookActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update);
+        
         addressBook = getIntent().getExtras().getParcelable("addressBook");
+
         firstName =(EditText) findViewById(R.id.upd_firstName);
         lastName =(EditText) findViewById(R.id.upd_lastName);
         addressOne  =(EditText) findViewById(R.id.upd_addressOne);
